@@ -7,7 +7,7 @@
     </ul> <br>
     <h4>Alamat</h4>
     <ul type="none">
-        <li> Gg.Rawa Simprug</li>
+        <li> -</li>
     </ul>
     <h4>Tempat Lahir</h4>
     <ul type="none">
