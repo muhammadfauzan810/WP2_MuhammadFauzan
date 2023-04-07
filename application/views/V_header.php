@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<p><b>Are You Can Access The Internet.</b></p>
 <html>
 
 <head>
