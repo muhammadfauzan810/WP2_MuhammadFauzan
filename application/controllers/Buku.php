@@ -12,7 +12,7 @@ class Buku extends CI_Controller
         $data['judul'] = 'Kategori Buku';
         $data['user'] = $this->ModelUser->cekData(['email' => $this->session->userdata('email')])->row_array();
         $data['kategori'] = $this->ModelBuku->getKategori()->result_array();
-        $this->form_validation->set_rules('nama_kategori', 'id_kategori', 'required', [
+        $this->form_validation->set_rules('kategori', 'kategori', 'required', [
             'required' => 'Kategori Buku harus diisi'
         ]);
         if ($this->form_validation->run() == false) {
@@ -23,7 +23,7 @@ class Buku extends CI_Controller
             $this->load->view('templates/footer');
         } else {
             $data = [
-                'kategori' => $this->input->post('kategori', true)
+                'nama_kategori' => $this->input->post('kategori', true)
             ];
             $this->ModelBuku->simpanKategori($data);
             redirect('buku/kategori');
